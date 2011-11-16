@@ -1,0 +1,13 @@
+.deps
+autom4te.cache
+config.h
+config.h.in
+config.log
+config.status
+stamp-git
+stamp-h1
+Makefile
+Makefile.in
+INSTALL
+ChangeLog
+aclocal.m4

@@ -1,0 +1,9 @@
+fpidump -- Export SAR data from Astrium .FPI files
+==================================================
+
+Copyright (C) 2011 Peter TB Brett <p.brett@surrey.ac.uk>
+
+Notable changes in fpidump 1.0
+==============================
+
+* Initial release with basic functionality.

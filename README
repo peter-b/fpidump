@@ -1,0 +1,52 @@
+fpidump -- Export SAR data from Astrium .FPI files
+==================================================
+
+Copyright (C) Peter TB Brett <p.brett@surrey.ac.uk>
+
+`fpidump' exports synthetic aperture radar (SAR) data from .fpi files
+as produced by some experimental Astrium SAR sensors.
+
+Usage
+-----
+
+`fpidump' can export image metadata in a text-based format compatible
+with the common ".ini" configuration format.  For example:
+
+  fpidump foo.fpi -m foo.meta
+
+`fpidump' can also export image raster data in TIFF format.  The
+generated TIFF will be a single-band image using either real or
+complex 32-bit IEEE floating-point samples (depending on the format of
+the source data), e.g.:
+
+  fpidump foo.fpi -t foo.tiff
+
+You can export both metadata and raster data in a single command:
+
+  fpidump foo.fpi -m foo.met -t foo.tiff
+
+Known bugs
+----------
+
+`fpidump' only works on x86 systems or systems with a matching integer
+byte order ("little-endian").
+
+Installing fpidump
+------------------
+
+To compile and install this software, you must have the following
+dependencies installed:
+
+* A C compiler (GCC is recommended).
+* GLib 2.6.0 or later
+* libtiff
+
+For full installation instructions, see the `INSTALL' file.
+
+If you are compiling from the git repository, you will need to run
+`autoreconf -i' before following the instructions in `INSTALL'.
+
+Reporting bugs
+--------------
+
+Please report bugs to <p.brett@surrey.ac.uk>.
