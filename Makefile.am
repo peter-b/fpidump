@@ -5,7 +5,11 @@ AM_LDFLAGS = -ltiff $(GLIB_LIBS)
 
 fpidump_SOURCES = fpidump.c
 
+false = /bin/sh -c '! :'
 ACLOCAL_AMFLAGS = -I m4
+DISTCHECK_CONFIGURE_FLAGS = GIT="$(false)"
+
+EXTRA_DIST = ChangeLog
 
 if HAVE_GIT_REPO
 ChangeLog: stamp-git
