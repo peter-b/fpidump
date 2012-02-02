@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
-AC_INIT([FPI Extraction Tool], [1.0], [p.brett@surrey.ac.uk])
+AC_INIT([FPI Extraction Tool], [1.0], [p.brett@surrey.ac.uk], [fpidump])
 
 AC_CONFIG_SRCDIR([fpidump.c])
 AC_CONFIG_AUX_DIR([build-tools])
